@@ -10,8 +10,8 @@
         android:id="@+id/SpashScreen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
 
+        android:layout_centerInParent="true"
         app:srcCompat="@drawable/ic_launcher_background"
         tools:layout_editor_absoluteX="126dp"
         tools:layout_editor_absoluteY="253dp" />

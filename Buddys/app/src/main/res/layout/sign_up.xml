@@ -10,123 +10,120 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="60dp"
-
-        android:outlineAmbientShadowColor="@color/black"
-        android:padding="15sp"
-        android:text="Sign-up"
+        android:layout_above="@id/FirstName"
         android:textAlignment="center"
-        android:textSize="25sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="33dp" />
+        android:layout_marginBottom="@dimen/_50sdp"
+        android:textSize="@dimen/_30ssp"
+        android:text="Sign-up" />
 
     <EditText
         android:id="@+id/FirstName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="150dp"
+        android:layout_above="@id/PhoneEmail"
+        android:layout_margin="@dimen/_5sdp"
         android:hint="First Name"
         android:inputType="textEmailAddress"
-        android:padding="15sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="169dp" />
+        android:textSize="@dimen/_17ssp"/>
 
     <EditText
         android:id="@+id/PhoneEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="223dp"
+        android:layout_above="@id/LastName"
+        android:layout_margin="@dimen/_5sdp"
         android:hint="Phone or Email"
         android:inputType="textEmailAddress"
-        android:padding="15sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="277dp" />
+        android:textSize="@dimen/_17ssp" />
 
     <EditText
         android:id="@+id/LastName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="298dp"
+        android:layout_centerInParent="true"
         android:hint="Last Name"
+        android:layout_margin="@dimen/_5sdp"
+        android:textSize="@dimen/_17ssp"
         android:inputType="textEmailAddress"
-        android:padding="15sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="223dp" />
+/>
 
     <EditText
         android:id="@+id/Password_Sign_up"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-
-
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="307dp"
-        android:ems="10"
+        android:layout_below="@id/LastName"
+        android:layout_margin="@dimen/_5sdp"
         android:hint="Password"
-        android:inputType="textPassword"
-        android:padding="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.482" />
+        android:textSize="@dimen/_17ssp"
+        android:inputType="textPassword" />
 
     <Button
         android:id="@+id/Button_NewAccount"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@id/Password_Sign_up"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginHorizontal="@dimen/_50sdp"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="224dp"
         android:gravity="center"
-        android:text="Let me in"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.581" />
+        android:textSize="@dimen/_10ssp"
+        android:text="Let me in" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="51dp"
+        android:layout_above="@id/Button_SignGoogle"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/_9sdp"
+        android:maxLines="2"
+        android:text="Or\nSignUp with"
+        android:textAlignment="center"
+        android:textColor="@color/black" />
+
+    <ImageButton
+        android:id="@+id/Button_SignFacebook"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/round"
+
+        android:layout_above="@id/Button_AlreadyABuddy"
+        android:layout_marginLeft="@dimen/_70sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+
+        app:srcCompat="@drawable/github" />
+    <ImageButton
+        android:id="@+id/Button_SignGoogle"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/round"
+
+        android:layout_above="@id/Button_AlreadyABuddy"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/_10sdp"
+
+        app:srcCompat="@drawable/google1" />
+    <ImageButton
+        android:id="@+id/Button_SignGithub"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/round"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_above="@id/Button_AlreadyABuddy"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/_70sdp"
+        app:srcCompat="@drawable/facebook1"
+
+       />
 
     <Button
         android:id="@+id/Button_AlreadyABuddy"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="10sp"
-        android:layout_marginTop="10sp"
-        android:layout_marginEnd="10sp"
-        android:layout_marginBottom="3dp"
-        android:foregroundGravity="bottom"
-
+        android:layout_marginStart="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_marginEnd="@dimen/_2sdp"
+        android:layout_marginBottom="@dimen/_2sdp"
         android:gravity="center"
         android:text="Already-a-Buddy ?"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1" />
+        android:textSize="@dimen/_10ssp" />
 </RelativeLayout>

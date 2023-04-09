@@ -16,6 +16,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //window feture for remove title bar
+
         setContentView(R.layout.login_register);
         mLoginBtnOut = findViewById(R.id.Button_Login_Outside);
         mRegisterBtn = findViewById(R.id.Button_Register);

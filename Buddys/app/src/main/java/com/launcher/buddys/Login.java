@@ -9,19 +9,19 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Login extends AppCompatActivity {
-    Button mRegisterBtn,mLoginBtnIn;
+    Button mNewBuddy,mLoginBtnIn;
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
 
-        mRegisterBtn = findViewById(R.id.Button_Register);
+        mNewBuddy = findViewById(R.id.Button_NotAbuddyYet);
         mLoginBtnIn = findViewById(R.id.Button_Login_In);
 
 
 
-        mRegisterBtn.setOnClickListener(new View.OnClickListener() {
+        mNewBuddy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(),Register.class));
@@ -30,7 +30,7 @@ public class Login extends AppCompatActivity {
         mLoginBtnIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(),Register.class));
+                startActivity(new Intent(getApplicationContext(),Home.class));
             }
         });
     }

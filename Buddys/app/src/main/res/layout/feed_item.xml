@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_300sdp"
+        tools:ignore="MissingConstraints">
+
+        <ImageButton
+            android:id="@+id/Image_UserIcon"
+            android:scaleType="fitCenter"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:layout_constraintBottom_toTopOf="@+id/Image_Feed"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias=".05"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/Text_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dummy"
+            android:textSize="@dimen/_13ssp"
+
+            app:layout_constraintBottom_toTopOf="@+id/Text_Location"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintStart_toEndOf="@+id/Image_UserIcon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.3" />
+
+        <TextView
+            android:id="@+id/Text_Location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location-Rishikesh"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintBottom_toTopOf="@+id/Image_Feed"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintStart_toEndOf="@+id/Image_UserIcon"
+            app:layout_constraintTop_toBottomOf="@+id/Text_Name"
+            app:layout_constraintVertical_bias=".5" />
+
+        <ImageButton
+            android:id="@+id/Image_3Dot"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_margin="@dimen/_2sdp"
+            app:layout_constraintBottom_toTopOf="@+id/Image_Feed"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toEndOf="@id/Image_UserIcon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icon_3dot"
+            android:scaleType="fitCenter"/>
+
+        <ImageView
+            android:id="@+id/Image_Feed"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_200sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias=".4"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ic_launcher_background" />
+
+        <ImageButton
+            android:id="@+id/Button_Buddy"
+
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_margin="@dimen/_2sdp"
+            android:src="@drawable/icon_buddy"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias=".7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Image_Feed"
+            app:layout_constraintVertical_bias=".02" />
+
+        <ImageButton
+            android:id="@+id/Button_Share"
+            android:scaleType="fitCenter"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_margin="@dimen/_2sdp"
+            android:src="@drawable/icon_share2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias=".05"
+            app:layout_constraintStart_toEndOf="@id/Button_Comment"
+            app:layout_constraintTop_toBottomOf="@id/Image_Feed"
+
+            app:layout_constraintVertical_bias=".02" />
+
+        <ImageButton
+            android:id="@+id/Button_Comment"
+            android:scaleType="fitCenter"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_margin="@dimen/_2sdp"
+            android:src="@drawable/icon_comment"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias=".05"
+            app:layout_constraintStart_toEndOf="@id/Button_Buddy"
+            app:layout_constraintTop_toBottomOf="@id/Image_Feed"
+
+            app:layout_constraintVertical_bias=".02" />
+
+        <ImageButton
+            android:scaleType="fitCenter"
+            android:id="@+id/Button_Save"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_margin="@dimen/_2sdp"
+            android:src="@drawable/icon_save"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/Button_Buddy"
+            app:layout_constraintHorizontal_bias=".05"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Image_Feed"
+
+            app:layout_constraintVertical_bias=".02" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
